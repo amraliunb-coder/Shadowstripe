@@ -2,11 +2,11 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-brand-900: #0F172A;
-  --color-brand-500: #64748B;
-  --color-brand-200: #E2E8F0;
+  --color-brand-900: #171717;
+  --color-brand-500: #737373;
+  --color-brand-200: #E5E5E5;
   --color-background: #FFFFFF;
-  --color-foreground: #0F172A;
+  --color-foreground: #171717;
 }
 
 :root {
