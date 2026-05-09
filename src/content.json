@@ -1,0 +1,43 @@
+{
+  "siteName": "Shadowstripe Consulting",
+  "hero": {
+    "title": "HR and Risk Support for Serious SMEs",
+    "subtitle": "Professional HR and risk consultancy for small and medium businesses. No fluff, just practical expertise."
+  },
+  "services": [
+    {
+      "id": "hr-infrastructure",
+      "title": "HR Infrastructure",
+      "description": "Build robust HR foundations to support growth, ensuring legal compliance and operational efficiency."
+    },
+    {
+      "id": "risk-management",
+      "title": "Risk Management",
+      "description": "Identify, assess, and mitigate risks before they disrupt your business operations."
+    },
+    {
+      "id": "crisis-support",
+      "title": "Crisis Support",
+      "description": "Immediate, practical guidance to navigate unexpected business or personnel crises effectively."
+    },
+    {
+      "id": "compliance-audit",
+      "title": "Compliance Audit",
+      "description": "Comprehensive review of policies and practices to protect your business against liabilities."
+    }
+  ],
+  "about": {
+    "bio": "With over 15 years of industry experience, Shadowstripe Consulting was founded on the principles of integrity, practicality, and clarity. We reject corporate clichés and 'thought leadership' fluff, focusing entirely on delivering concrete HR and risk management solutions for serious SMEs. Our goal is to provide reliable support that protects your business and empowers your workforce.",
+    "values": [
+      "Integrity",
+      "Practicality",
+      "Clarity"
+    ],
+    "qualifications": [
+      "Certified HR Professionals",
+      "15+ Years Industry Experience",
+      "Risk Management Experts",
+      "Proven Track Record in SMEs"
+    ]
+  }
+}

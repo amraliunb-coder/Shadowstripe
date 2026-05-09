@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shadowstripe Consulting Website
 
-## Getting Started
+This is a Next.js 15+ (App Router) project built for Shadowstripe Consulting, following a minimalist, high-contrast design system.
 
-First, run the development server:
+## 🚀 Getting Started
+
+To run the development server locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Content Management
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The site uses a simple file-based system for managing content:
 
-## Learn More
+1. **Global Content & Services**: Edit `src/content.json` to update the hero text, services list, company bio, values, and qualifications.
+2. **Articles & Insights**: Create new `.md` files inside the `src/content/articles/` directory. Use the following frontmatter at the top of the file:
+   ```yaml
+   ---
+   title: "Your Article Title"
+   date: "YYYY-MM-DD"
+   category: "Risk Management"
+   excerpt: "A brief summary of the article."
+   ---
+   ```
+   The rest of the file can be written in standard Markdown.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** Next.js 15+ (App Router)
+- **Styling:** Tailwind CSS 4
+- **Language:** TypeScript
+- **Icons:** Lucide React
+- **Markdown:** `gray-matter`, `remark`, and `remark-html`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Deployment (Vercel or GitHub Pages)
 
-## Deploy on Vercel
+This project is configured for **Static HTML Export**. When you build the project, Next.js will generate static HTML/CSS/JS files in the `out` directory.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deploying to Vercel
+1. Push this repository to your GitHub account.
+2. Import the repository into [Vercel](https://vercel.com).
+3. Vercel will automatically detect Next.js.
+4. Go to **Settings > General** in your Vercel project and set the **Output Directory** to `out`.
+5. Click **Deploy**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Deploying to GitHub Pages
+1. Push this repository to your GitHub account.
+2. Go to your repository settings > **Pages**.
+3. Select **GitHub Actions** as the source.
+4. Next.js provides an official GitHub Actions workflow for static export. You can find the template [here](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#deploying-to-github-pages) or simply use Vercel for a zero-config setup.
+
+*Note: Since `output: 'export'` is defined in `next.config.ts`, standard Node.js server features like Image Optimization (unoptimized is set to true) and API Routes are disabled in favor of static delivery.*
