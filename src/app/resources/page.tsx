@@ -81,7 +81,7 @@ export default function Resources() {
                       />
                       <button 
                         type="submit" 
-                        className="w-full bg-brand-900 text-white py-3 font-bold hover:bg-brand-900/90 transition-colors mt-2"
+                        className="w-full bg-brand-900 text-white py-3 font-medium text-sm tracking-[0.12em] uppercase hover:bg-brand-900/90 transition-colors mt-2"
                       >
                         Download PDF
                       </button>

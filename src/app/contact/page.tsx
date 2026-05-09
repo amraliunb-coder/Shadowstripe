@@ -56,7 +56,7 @@ export default function Contact() {
                     required 
                   ></textarea>
                 </div>
-                <button type="submit" className="bg-brand-900 text-white px-8 py-4 font-bold text-lg hover:bg-brand-900/90 transition-colors w-full sm:w-auto">
+                <button type="submit" className="bg-brand-900 text-white px-8 py-4 font-medium text-sm tracking-[0.12em] uppercase hover:bg-brand-900/90 transition-colors w-full sm:w-auto">
                   Submit Inquiry
                 </button>
               </form>

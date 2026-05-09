@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex justify-center gap-4">
             <Link 
               href="/contact" 
-              className="bg-white text-brand-900 px-8 py-4 font-semibold text-lg hover:bg-gray-100 transition-colors inline-flex items-center"
+              className="bg-white text-brand-900 px-8 py-4 font-medium text-sm tracking-[0.12em] uppercase hover:bg-gray-100 transition-colors inline-flex items-center"
             >
               Book a Call <ArrowRight className="ml-2 w-5 h-5" />
             </Link>

@@ -7,7 +7,10 @@ export default function Footer() {
         <div className="md:col-span-2 space-y-4">
           <Link href="/" className="flex items-center space-x-3">
             <img src="/logo.jpg" alt="Shadowstripe Logo" className="w-8 h-8 object-contain" />
-            <span className="font-bold text-xl tracking-tight text-brand-900">Shadowstripe</span>
+            <div className="leading-tight">
+              <strong className="block font-serif font-semibold text-lg tracking-wide text-brand-900">Shadowstripe</strong>
+              <span className="block text-[0.65rem] tracking-[0.18em] uppercase text-brand-500">Consulting</span>
+            </div>
           </Link>
           <p className="text-brand-500 text-sm max-w-sm">
             Professional HR and risk consultancy for small and medium businesses. No fluff, just practical expertise.

@@ -6,7 +6,10 @@ export default function Header() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-3">
           <img src="/logo.jpg" alt="Shadowstripe Logo" className="w-10 h-10 object-contain" />
-          <span className="font-bold text-xl tracking-tight text-brand-900">Shadowstripe</span>
+          <div className="leading-tight">
+            <strong className="block font-serif font-semibold text-lg tracking-wide text-brand-900">Shadowstripe</strong>
+            <span className="block text-[0.65rem] tracking-[0.18em] uppercase text-brand-500">Consulting</span>
+          </div>
         </Link>
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-500">
           <Link href="/about" className="hover:text-brand-900 transition-colors">About</Link>
@@ -16,7 +19,7 @@ export default function Header() {
           <Link href="/contact" className="hover:text-brand-900 transition-colors">Contact</Link>
         </nav>
         <div className="flex items-center">
-          <Link href="/contact" className="bg-brand-900 text-white px-4 py-2 text-sm font-medium rounded-sm hover:bg-brand-900/90 transition-colors">
+          <Link href="/contact" className="bg-brand-900 text-white px-6 py-2.5 text-[0.78rem] font-medium tracking-[0.12em] uppercase hover:bg-brand-900/90 transition-colors">
             Book a Call
           </Link>
         </div>
